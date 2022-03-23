@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>☆〜（ゝ。∂ )</title>
+<meta charset="utf-8">
+<link rel="icon" type="image/png" href="http://hoyeon.ju.mp/assets/images/favicon.png?v=b0de9329">
+<style> 
+@font-face { font-family:"petscopwide"; src:url(https://dl.dropbox.com/s/fial5dxzc42lx7z/PetscopWide.ttf);}
+body {
+background-image: linear-gradient(0deg, #C1C1C2 1%, #FFFFFF 10%, #FFFFFF 90%, #B6B4B8 100%);
+text-align:center;
+}
+
+.marginthing {
+margin-top:50%;
+margin-bottom:50%;
+}
+
+.mainbox {
+width:100%;
+height:50%;
+text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000, 0 0;
+padding:80px;
+background-image:url(https://dl.dropbox.com/s/64ggxn94yn41irm/potentialpattern.png);
+background-size:contain;
+animation:bg 3s linear infinite;
+}
+@keyframes bg {
+from {background-position:0px;}
+to {background-position:-213px;}
+}
+
+.giftplane {
+width:150px;
+animation:wiggle 0.5s ease-in-out infinite alternate;
+}
+@keyframes wiggle {
+from {transform:rotate(9deg);}
+to {transform:rotate(-9deg);}
+}
+
+.petscop {
+position:absolute;
+z-index:1;
+top:20%;
+left: 0; right: 0; margin-left: auto; margin-right: auto;
+}
+
+.petscopimg{
+width:400px;
+}
+
+.txtbelow {
+font-family:"petscopwide";
+color:#7F4A82;
+position:relative;
+z-index:2;
+animation:blink 2s infinite;
+}
+@keyframes blink {
+0% {opacity:100%;}
+49% {opacity:100%;}
+50% {opacity:0%;}
+99% {opacity:0%;}
+100% {opacity:100%;}
+
+}
+
+.buttons {
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.buttoncenter {
+position:relative;
+z-index:2;
+}
+
+p, a {
+font-family:"petscopwide";
+text-shadow:0 0 0;
+}
+
+section {
+display:none;
+}
+section:target {
+display:block;
+}
+
+
+.aboutbox {
+text-align: left;
+    height: 170px;
+    width: 100%;
+    padding: 10px;
+    margin-top:20px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #ffffff;
+    border:5px solid #ffffff #C3BBBE #C3BBBE #C3BBBE;
+    border-style:inset;
+    font-size: 15px;
+    font-family: Mali;
+    line-height: 1.4;
+    overflow: auto;
+}
+mark {
+    background: #FFF;
+    border-radius:10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 5px;
+    text-shadow:0 0 0;
+}
+a:link {
+    text-decoration: none;
+    font-weight: 500;
+    color: #ff90c3;
+    font-size: 0.8em;
+    text-shadow:0 0 0;
+}
+
+::-webkit-scrollbar{width:9px; height:9px}
+::-webkit-scrollbar-button:start:decrement, 
+::-webkit-scrollbar-button:end:increment{height:9px; width:9px; display:block; background:#FFDCFE; border:1px solid #FFA3D1}
+::-webkit-scrollbar-track-piece{background-color:#FDBFFB; border:3px solid #FFF}
+::-webkit-scrollbar-thumb:vertical, 
+::-webkit-scrollbar-thumb:horizontal{background:url(https://dl.dropbox.com/s/8csucx2b3cykwup/pattern1petscop.png); border:1px solid #FDBFFB}
+
+#musicplayer { /*aquí tampoco cambies nada solo el left-bottom si quieres moverlo de posición y el color del fondo*/ left: 1em; bottom: 30em; display:grid; grid-template-columns:20px auto; align-items:center; width: 6.875em; height: 2em; line-height:140%; background:#D1BFF3; border: 4px double white; border-radius: 0.875em; } #musicplayer > div { border-radius: 0.875em; } #musictitle{ overflow: hidden; white-space: nowrap; display:inline-block; width: calc(100% + - 10px - 1px); margin-left: calc(10px + 1px); } #musicpixel { /*si cambiaste el color del music player debes cambiar aquí también el fondo al mismo color*/ width:10px; height:10px; position:relative; background:#D1BFF3; padding-left: 5px; opacity: 1; } .overlay { /*si cambiaste el color del music player debes cambiar aquí también el fondo al mismo color*/ opacity:0; position:absolute; top:0; left:0; text-align:center; width:100%; height:100%; transition:0.3s ease; background:#D1BFF3; border-radius: 0.875em; } #musicplayer:hover .overlay { opacity: 1; transition:0.3s ease; } #musicplayer:hover #bear {opacity: 0; transition:0.3s ease; } .playpause{ position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); margin-left: 5px; } .playpause:hover{ cursor:help; } #musicpixel img{ display:block; } .marquee { /*cambiar el color de la font dependiendo el estilo que lleves en la carrd*/ display: inline-block; padding-left: 100%; animation: marquee 3s linear infinite; font-size:1em; font-family: mali; font-weight: 500; font-size: 9.5px; color: #8573A7; } @keyframes marquee { 0% { transform: translate(0, 0); } 50% { transform: translate(-50%, 0); } 100% { transform: translate(-125%, 0); } }
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+.fa-play:before {
+    content: "\f04b";
+}
+
+
+.fas {
+font-family: "Font Awesome 5 Free";
+-webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+
+@media screen and (max-width: 1090px) {
+.marginthing {
+margin-left:20%;
+margin-right:20%;
+margin-top:10%;
+margin-bottom:10%;
+}
+
+}
+
+
+</style>
+
+</head>
+<body>
+
+<div class=marginthing>
+
+<div class=mainbox>
+<img class=giftplane style="position:relative;z-index:1;" src="https://dl.dropbox.com/s/zv4osd98dv7lid3/giftp.png">
+<div class=petscop>
+<img class=petscopimg style="position:relative;z-index:1;" src="https://dl.dropbox.com/s/4vk686tb9fgh2lq/Petscop.gif">
+</div>
+<br>
+<a class=txtbelow href="#one"><mark>Press start</mark></a>
+<div>
+
+
+
+<section id="home" class="active" style="display:block;">
+</section>
+
+<section id="one" class="inactive">
+<div class=aboutbox>
+<p> ICHIGO 17 yr old hispanic transfem genderfluid androsexual ♡ she mew star he prns. i have bpd and adhd diagnosed professionally. for those interested in typology and astrology im ENFP 4w5 485 melancholic-choleric sx/sp/so virgo sun libra moon aries asc. vedic chart is virgo sun virgo moon pisces asc.</p>
+
+
+</div>
+<div class=buttons>
+<a class=buttoncenter href="#two"><img src="https://dl.dropbox.com/s/c6wgh6iilkomeao/ezgif-5-2a8eecea59.gif"></a>  <p>Advance Text</p>
+<a class=buttoncenter href="#home"><img src="https://dl.dropbox.com/s/v29mtzyq5gdsokr/ezgif-5-c75db21650.gif"></a> <p>Go Back</p>
+
+</div>
+</section>
+
+<section id="two" class="inactive">
+<div class=aboutbox>
+<p>BYF im really annoying, im not joking.</p>
+<p>DNI no age in bio/carrd, post too much about genshin impact i will Probably mute you and if i do you should consider yourself priviledged that i havent BLOCKED you (you can post about it. just not too much), you comment "what the fuck" on my self harm posts i think that should be self explanatory. basic dni criteria. proshitters/maps. and lastly, you plan on accusing my followers of stuff they dont even know about (this has happened LOTS of times and gladly i havent seen it happen in awhile but just a reminder to stay away)</p>
+
+</div>
+<div class=buttons>
+<a class=buttoncenter href="#three"><img src="https://dl.dropbox.com/s/c6wgh6iilkomeao/ezgif-5-2a8eecea59.gif"></a>  <p>Advance Text</p>
+<a class=buttoncenter href="#one"><img src="https://dl.dropbox.com/s/v29mtzyq5gdsokr/ezgif-5-c75db21650.gif"></a> <p>Go Back</p>
+
+</div>
+</section>
+<section id="three" class=inactive>
+<div class=aboutbox>
+<p>KINS AND IDS (unsorted because i dont want to)
+<br> ʚ♡⃛ɞ⋆｡˚ 
+<br><strong>emilio murkmere - ghost eyes</strong>
+<br><strong>jules vaughn - euphoria</strong>
+<br><strong>touri - a classroom bereft of angels</strong>
+<br>audrey redheart - wandersong
+<br>kaleidoscope - reversion
+<br>asuka langley soryu - neon genesis evangelion
+<br>chinatsu yoshikawa - yuru yuri
+<br>strawberry crepe cookie - cookie run
+<br>entrapta - spop
+<br>hotaru tomoe - sailor moon
+<br>sugar - off
+<br>care - petscop
+</p>
+</div>
+
+<div class=buttons>
+<a class=buttoncenter href="#home"><img src="https://dl.dropbox.com/s/c6wgh6iilkomeao/ezgif-5-2a8eecea59.gif"></a>  <p>Advance Text</p>
+<a class=buttoncenter href="#two"><img src="https://dl.dropbox.com/s/v29mtzyq5gdsokr/ezgif-5-c75db21650.gif"></a> <p>Go Back</p>
+
+</div>
+</section>
+</div>
+</div>
+
+<script type="text/javascript" src="//counter.websiteout.net/js/36/6/0/1"></script>
+
+<div id="musicplayer" style="position:absolute"><div id="musicpixel"><strong><strong><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous"><img src="https://64.media.tumblr.com/4690a8723be2f84e78e7fd421ca80aa1/tumblr_inline_p8049gA4LK1qid2nw_75sq.gifv" id="bear"><div class="overlay"><div class="playpause"><i class="fas fa-play"></i></div></div></strong></strong></div><div id="musictitle"><strong><strong><span class="marquee">Petscop OST - level2 (Work Zone)</span></strong></strong></div><script type="text/javascript">
+							
+							/*
+							
+							Simple Image Trail script- By JavaScriptKit.com
+							
+							Visit http://www.javascriptkit.com for this script and more
+							
+							This notice must stay intact
+							
+							*/
+							
+							var offsetfrommouse=[0,0] //image x,y offsets from cursor position in pixels. Enter 0,0 for no offset
+							
+							var displayduration=0 //duration in seconds image should remain visible. 0 for always.
+							
+							if (document.getElementById || document.all)
+							
+							document.write('<div id="trailimageid" style="position:fixed;visibility:visible;left:0px;top:0px;width:1px;height:1px;pointer-events:none;z-index:1000"><img src="'+trailimage[0]+'" border="0" width="'+trailimage[1]+'px" height="'+trailimage[2]+'px"></div>')
+							
+							function gettrailobj(){
+							
+							if (document.getElementById)
+							
+							return document.getElementById("trailimageid").style
+							
+							else if (document.all)
+							
+							return document.all.trailimagid.style
+							
+							}
+							
+							function truebody(){
+							
+							return (!window.opera && document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+							
+							}
+							
+							function hidetrail(){
+							
+							gettrailobj().visibility="hidden"
+							
+							document.onmousemove=""
+							
+							}
+							
+							function followmouse(e){
+							
+							var xcoord=offsetfrommouse[0]
+							
+							var ycoord=offsetfrommouse[0]
+							
+							if (typeof e != "undefined"){
+							
+							xcoord+=e.pageX
+							
+							ycoord+=e.pageY
+							
+							}
+							
+							else if (typeof window.event !="undefined"){
+							
+							xcoord+=truebody().scrollLeft+event.clientX
+							
+							ycoord+=truebody().scrollTop+event.clientY
+							
+							}
+							
+							var docwidth=document.all? truebody().scrollLeft+truebody().clientWidth : pageXOffset+window.innerWidth-15
+							
+							var docheight=document.all? Math.max(truebody().scrollHeight, truebody().clientHeight) : Math.max(document.body.offsetHeight, window.innerHeight)
+							
+							if (xcoord+trailimage[1]+3>docwidth || ycoord+trailimage[2]> docheight)
+							
+							gettrailobj().display="none"
+							
+							else
+							
+							gettrailobj().display=""
+							
+							gettrailobj().left=xcoord+"px"
+							
+							gettrailobj().top=ycoord+"px"
+							
+							}
+							
+							document.onmousemove=followmouse
+							
+							if (displayduration>0)
+							
+							setTimeout("hidetrail()", displayduration*1000)
+							
+							</script><strong><strong><script>
+							
+							document.querySelector('.playpause').addEventListener('click', playpause);
+							
+							function playpause(){
+							
+							if(document.querySelector('.playpause').innerHTML == '<i class="fas fa-play"></i>'){
+							
+							document.querySelector('#musicsrc').play();
+							
+							document.querySelector('.playpause').innerHTML = '<i class="fas fa-pause"></i>';
+							
+							} else{
+							
+							document.querySelector('#musicsrc').pause();
+							
+							document.querySelector('.playpause').innerHTML = '<i class="fas fa-play"></i>';
+							
+							}
+							
+							}
+							
+							</script></strong></strong></div>
+<strong>
+<strong>
+<audio id="musicsrc" loop="" src="https://dl.dropbox.com/s/lvv76ijyuf740zh/level2%20%28petscop%20ost%29.mp3"></audio>
+</strong>
+</strong>
+
+
+</div>
+
+<script>
+
+							
+							var b = document.body;
+							var imgurl = "https://graphic.neocities.org/tumblr_inline_n15muwtSLA1rqcq1b.gif";
+							var size = [20, 30];
+							function rand(min, max)
+							{
+							return Math.floor(Math.random() * (max - min + 1) + min)
+							}
+							function getSize()
+							{
+							return rand(size[0], size[1]);
+							}
+							function lerp(a,b,f)
+							{
+							return (b-a)*f+a;
+							}
+							function heart(x,y)
+							{
+							var s = getSize();
+							x -= s/2;
+							y -= s/2;
+							x = Math.floor(x) + rand(-5, 5);
+							y = Math.floor(y) + rand(-5, 5);
+							var fx = x + rand(-40, 40);
+							var fy = y + rand(-40, 40);
+							var i = document.createElement("img");
+							i.src = imgurl;
+							i.style = `pointer-events: none; position: fixed; width: ${s}px; left: ${x}px; top: ${y}px; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; z-index: 1000000;`;
+							b.appendChild(i);
+							var f = 0;
+							var interval;
+							interval = setInterval(function() {
+							var _x = Math.floor(lerp(x, fx, f));
+							var _y = Math.floor(lerp(y, fy, f));
+							i.style = `pointer-events: none; position: fixed; width: ${s}px; left: ${_x}px; top: ${_y}px; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; z-index: 1000000;`;
+							i.style.opacity = 1-f;
+							f += 0.01;
+							if (f > 1)
+							{
+							clearInterval(interval);
+							b.removeChild(i);
+							}
+							}, 10);
+							}
+							function bro(x,y)
+							{
+							for (var i = 0; i < 5; i++)
+							{
+							heart(x,y);
+							}
+							}
+							b.addEventListener("click", function(event){
+							var x = event.clientX;
+							var y = event.clientY;
+							bro(x,y);
+							});
+							
+							
+</script>
+</body>
+</html>
